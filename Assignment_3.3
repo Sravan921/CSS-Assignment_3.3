@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Payment Form</title>
+	
+      <link rel="stylesheet" href="style.css">
+      
+	<link rel="stylesheet" type="text/css" href="formstyles.css" />
+</head>
+<body>
+	<form id="payment">
+		<fieldset>
+			<legend>Step 1: Your Details</legend>
+			<ol>
+				<li>	
+					<label for="name">Name</label>
+            <input id="name" name="name" type"text" placeholder="First and Last Name" autofocus/>
+				</li>
+          <li>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text" placeholder="example@domain.com" />
+        </li>
+        <li>
+          <label for="phone" >Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="Eg. 2045550524">
+        </li>
+			</ol>
+		</fieldset>
+    <fieldset>
+      <legend>Step 2 : Delivery Address</legend>
+      <ol>
+        <li>
+          <label for"address">Address</label>
+          <textarea id="address" name="address" rows="5" placeholder="Your Address"></textarea>
+        </li>
+        <li>
+          <label for"postalcode">Postal Code</label>
+          <input id="postalcode" name="postalcode" type="text" placeholder="Something like 68135" />
+        </li>
+        <li>
+          <label for="country">Country</label>
+          <input id="country" name="country" type="text" />
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>Step 3 : Card Details</legend>
+      <ol>
+          <li>
+             <fieldset>
+               <legend>Card Type</legend>
+               <ol>
+                 <li>
+                   <input id="visa" name="cardtype" type="radio" />
+                   <label for="visa">VISA</label>
+               </li>
+                 <li>
+                    <input id="amex" name="cardtype" type="radio" />
+                   <label for="amex">AmEx</label>
+                 </li>
+                 <li>
+                     <input id="mastercard" name="cardtype" type="radio" />
+                   <label for="mastercard">Mastercard</label>
+                 </li>
+               
+               </ol>
+            </fieldset>
+        </li>
+        <li>
+          <label for="cardnumber">Card Number</label>
+          <input id="cardnumber" name="cardnumber" type="number" />
+        </li>
+        <li>
+          <label for="secure">Security Code</label>
+          <input id="secure" name="secure" type="number" />
+        </li>
+        <li>
+          <label for="namecard">Name on Card</label>
+          <input id="namecard" name="namecard" type="text" />
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <button type="submit">Buy it!</button>
+    </fieldset>
+	</form>
+</body>
+</html>
+  
+  
+</body>
+</html>
